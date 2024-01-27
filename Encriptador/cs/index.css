@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#botoncopiar{
+    display: none;
+}
+
+.logo{
+    padding: 30px;
+}
+
+
+
+ .caja-texto-usuario-input{
+    width: 900px;
+    height: 450px;
+    margin: 0 0 0 30px; /* Centra la caja en la pantalla */
+    display: inline-block;
+    background-color: #f4f4f4;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#caja-texto-usuario{
+    width: 900px;
+    height: 450px;
+    padding: 20px;
+    margin: 0 0 0 30px; /* Centra la caja en la pantalla */
+
+
+}
+
+.texto-encriptado{
+    display: inline-block;
+    width: 100px;
+    height: 410px;
+}
+
+
+
+
+.seccion-botones{
+    background-color: blue;
+}
