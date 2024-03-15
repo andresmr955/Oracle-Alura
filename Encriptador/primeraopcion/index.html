@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Encriptador</title>
 
@@ -14,33 +15,38 @@
             <img class="header__logo" src="/imag/Logo.png" alt="">
         </header>
         <main>
-            <div class="main">
-                <div class="left">
-                    <textarea class="ingreso-texto" name="" id="ingreso-texto_ide" cols="30" rows="10" placeholder="Insérer texte ici"></textarea>
-                    <div class="left-footer">
-                        <img class="iexlamacion" src="/imag/697.png" alt="">
-                        <span >Seulement des lettres minuscules et pas d'accents</span>
-                       <div class="botones">
-                            <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                            <button class="boton-desencriptar">Desencriptar</button>
-                       </div>
-                    </div>
-               </div>
-               <div class="right" >
-                    <textarea class="mensaje" id="textos_ide" cols="" rows=""></textarea>
-                    <img class="munieco" src="/imag/Muñeco.png" alt="">
-                    <div class="textos"  >
-                        <p>Ningun mensaje fue encontrado</p>
-                        <p>Ingresa el mensaje que deseas desencriptar.</p>
-                    </div>
-                    <button class="boton-copiar">copiar</button>
-                </div>
+            
+                <section class="encriptarx">
+                    <textarea class="text-area" name="" id="ingreso-texto_ide" cols="30" rows="10" placeholder="Insérer texte ici"></textarea>
+                        <div>
+                            <h3 class="informacion"><img class="tamaño-imagen" src="./imag/697.png" alt=""> <p>Seulement des lettres minuscules et pas d'accents</p></h3>
+                        </div>
+                        <div class="botones">
+                            <button id="encriptarBtn" class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                            <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                       </div>    
+               </section>
                
-            </div>
+               <section class="encriptado" id="encriptadoSection">
+                <div class="mensaje-encriptado">
+                    <div id="seccionUno">
+                        <img id="munieco" src="/imag/Muñeco.png" alt="" >
+                        <h2 id="titulo-mensaje">Aucun message n'a été trouvé</h2>
+                        <p id="parrafo">Saisissez le message que vous souhaitez crypter ou décrypter</p>
+                    </div>
+                    <div id="seccionDos">
+                        <textarea style="display: none;" class="mensaje" id="textos_ide" cols="30" rows="12" ></textarea>
+                    </div>
+                </div>
+                <button  class="boton-copiar" onclick="btnCopiar()">Copiar</button>
+            </section>
+            
         </main>
         <script src="/script.js"></script>
         <footer>
 
         </footer>
+        
+       
     </body>
 </html>

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.parent{
+    border: 2px black dotter;
+    display: inline-block;
+    
+}
+
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#two{
+    background-color: green;
+    position: absolute;
+    left: 190px;
+    top: 50px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#one{
+    position: relative;
+    top: 95px;
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    border-radius: 10px;
+
+
+}
+
+.box, h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
