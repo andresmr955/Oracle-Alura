@@ -94,6 +94,26 @@ left: 12%;
 top: 83%;
 }
 
+#reloadButton {
+    padding: 8px 16px; /* Espaciado interno para el botón */
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #040f53; /* Borde delgado */
+    border-radius: 4px; /* Bordes redondeados */
+    font-family: "inter";
+    font-size: 14px;
+    line-height: 1; /* Espacio entre líneas */
+    color: #040f53; /* Color de texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+#reloadButton:hover {
+    background-color: #040f53; /* Cambia el color de fondo al pasar por encima */
+    color: white; /* Cambia el color del texto al pasar por encima */
+    border-color: transparent; /* Oculta el borde al pasar por encima */
+}
+
+
 .boton-encriptar{
 align-items: center;
 justify-content: center;
@@ -217,71 +237,82 @@ height: 50%;
 top: 15%;
 
 }
+#imagen-ocultar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#imagen-ocultar p {
+    margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+}
+
+#imagen-ocultar .boton-copiar {
+    margin-top: auto; /* Mueve el botón al final del contenedor */
+}
+
+
+#seccionDos {
+    display: none;
+}
 
 
 /*Responsive design*/
 
-@media (max-width: 57.5em){
-main{
-display: flex;
-flex-direction: row;
-}
-.encriptarx{
-width: 100%;
+@media screen and (max-width: 768px) {
+    .text-area {
+        width: 80%;
+        height: 50%;
+        left: 10%;
+        top: 10%;
+    }
 
-}
-.text-area{
-width: 80%;
-height: 60%;
-left: 10%;
-top: 5%;
-}
+    .informacion {
+        width: 90%;
+        left: 5%;
+        top: 70%;
+    }
 
-.informacion{
-width: 80%;
-left: 10%;
-top: 67%;
-}
-.informacion p{
-font-size: 16px;
-}
+    .botones {
+        width: 90%;
+        left: 5%;
+        top: 73%;
+    }
 
-.botones{
-width: 80%;
-left: 10%;
-top:70%;
-}
-.boton-encriptar{
-width: 48%;
-border-radius: 16px;
-}
-.boton-desencriptar{
-width: 48%;
-border-radius: 16px;
-}
-.boton-desencriptar:hover, .boton-encriptar:hover{
-margin: 0.3%;
-width: 47.5%;
-padding: 1.8%;
-} 
-.encriptado{
-width: 80%;
-height: 15%;
-left: 10%;
-top: 80%;
+    .encriptado {
+        width: 80%;
+        left: 10%;
+        top: 5%;
+    }
 }
 
-.mensaje-encriptado{
-width: 100%;
-top: 5%;
+/* Media query para pantallas aún más pequeñas, como smartphones en modo vertical */
+
+@media screen and (max-width: 480px) {
+    .text-area {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+
+    .informacion {
+        width: 95%;
+        left: 2.5%;
+        top: 65%;
+    }
+
+    .botones {
+        width: 95%;
+        left: 2.5%;
+        top: 68%;
+    }
+
+    .encriptado {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
 }
 
-.encriptado img{
-top: 0;
-display: none;
-visibility: hidden;
-
-}
-}
-
+/* Agrega más media queries según sea necesario para adaptar tu diseño a diferentes tamaños de pantalla */

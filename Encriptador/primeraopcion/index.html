@@ -22,29 +22,33 @@
                             <h3 class="informacion"><img class="tamaño-imagen" src="./imag/697.png" alt=""> <p>Seulement des lettres minuscules et pas d'accents</p></h3>
                         </div>
                         <div class="botones">
-                            <button id="encriptarBtn" class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                            <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                            <button id="encriptarBtn" class="boton-encriptar" onclick="btnEncriptar(); alternarElementos(); ">Encriptar</button>
+                            <button class="boton-desencriptar" onclick="btnDesencriptar();">Desencriptar</button>
                        </div>    
                </section>
                
                <section class="encriptado" id="encriptadoSection">
                 <div class="mensaje-encriptado">
                     <div id="seccionUno">
-                        <img id="munieco" src="/imag/Muñeco.png" alt="" >
-                        <h2 id="titulo-mensaje">Aucun message n'a été trouvé</h2>
-                        <p id="parrafo">Saisissez le message que vous souhaitez crypter ou décrypter</p>
+                        <div id="imagen-ocultar">
+                            <img id="munieco" src="/imag/Muñeco.png" alt="" >
+                            <h2 id="titulo-mensaje">Aucun message n'a été trouvé</h2>
+                            <p id="parrafo">Saisissez le message que vous souhaitez crypter ou décrypter</p>
+                        </div>
+                     
                     </div>
                     <div id="seccionDos">
-                        <textarea style="display: none;" class="mensaje" id="textos_ide" cols="30" rows="12" ></textarea>
+                        <textarea class="mensaje" id="textos_ide" cols="30" rows="12" ></textarea>
                     </div>
                 </div>
                 <button  class="boton-copiar" onclick="btnCopiar()">Copiar</button>
             </section>
             
         </main>
+        <button id="reloadButton">Recargar Página</button>
+
         <script src="/script.js"></script>
         <footer>
-
         </footer>
         
        

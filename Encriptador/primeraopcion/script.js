@@ -1,4 +1,10 @@
+document.getElementById('reloadButton').addEventListener('click', function() {
+    location.reload(); // Esta línea recarga la página cuando se hace clic en el botón
+});
 
+var imagenOcultar = document.getElementById("imagen-ocultar");
+var seccionDos = document.getElementById("seccionDos");
+var oculto = false; // Variable de control
 
 
 const codigo_Escrito = document.querySelector("#ingreso-texto_ide");
@@ -62,6 +68,11 @@ function btnCopiar(){
     });
 }
 
-
-
+function alternarElementos() {
+    if (!oculto) {
+        imagenOcultar.style.display = "none"; // Oculta la imagen
+        seccionDos.style.display = "block"; // Muestra la sección dos
+        oculto = true; // Cambia el estado de la variable de control
+    }
+}
 
