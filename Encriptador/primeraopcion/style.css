@@ -6,14 +6,22 @@ padding: 0;
 
 header{
 background: #f3f5fc;
-padding: 30px;
+padding: 20px;
+width: Fixed (120px)px;
+height: Fixed (48px)px;
+top: 40px;
+left: 40px;
+gap: 40px;
+opacity: 0px;
+
 
 }
 main{
 position: relative;
 width: 100vw;
-height: 100vh;
+height: 80vh;
 background: #f3f5fc;
+
 }
 
 .text-area{
@@ -179,17 +187,16 @@ padding: 1.8%;
 }
 
 .encriptado{
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-width: 30%;
-height: 90%;
-left: 60%;
-top: 5%;
-background: white;
-box-shadow: 0px 24px 32px -8px;
-border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    left: 75%;
+    background: white;
+    box-shadow: 0px 24px 32px -8px;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    width: 400px;
+    top: 40px;
+   
 
 }
 
@@ -257,62 +264,9 @@ top: 15%;
     display: none;
 }
 
-
+ 
+    
+.encriptarx{
+    display: flex;
+}
 /*Responsive design*/
-
-@media screen and (max-width: 768px) {
-    .text-area {
-        width: 80%;
-        height: 50%;
-        left: 10%;
-        top: 10%;
-    }
-
-    .informacion {
-        width: 90%;
-        left: 5%;
-        top: 70%;
-    }
-
-    .botones {
-        width: 90%;
-        left: 5%;
-        top: 73%;
-    }
-
-    .encriptado {
-        width: 80%;
-        left: 10%;
-        top: 5%;
-    }
-}
-
-/* Media query para pantallas aún más pequeñas, como smartphones en modo vertical */
-
-@media screen and (max-width: 480px) {
-    .text-area {
-        width: 90%;
-        left: 5%;
-        top: 5%;
-    }
-
-    .informacion {
-        width: 95%;
-        left: 2.5%;
-        top: 65%;
-    }
-
-    .botones {
-        width: 95%;
-        left: 2.5%;
-        top: 68%;
-    }
-
-    .encriptado {
-        width: 90%;
-        left: 5%;
-        top: 5%;
-    }
-}
-
-/* Agrega más media queries según sea necesario para adaptar tu diseño a diferentes tamaños de pantalla */
