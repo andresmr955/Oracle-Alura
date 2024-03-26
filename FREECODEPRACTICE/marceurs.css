@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+.marker,.marker_one, .marker_two, .marker_three{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.marker_one{
+    background: rgb(255, 0 ,0);
+    background-color: linear-gradient(rgb(255, 0 ,0));
+}
+
+.marker_two{
+    background-color: rgb(0, 255, 0);
+}
+.marker_three{
+    background-color: rgb(0, 0, 255);
+}
+
+.container{
+    background: rgb(255, 255, 255);
+    padding: 10px 0 0;
+
+}
