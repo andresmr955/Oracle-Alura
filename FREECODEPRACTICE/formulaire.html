@@ -11,22 +11,49 @@
     <p>Please fill out this form with the required information</p>
     <form action="https://register-demo.freecodecamp.org" method="post"></form>
     <fieldset class="fieldset">
-        <label>
-            Enter Your First Name: <input type="text" name="firstname">
+        
+        <label for="first-name">
+            Enter Your First Name: <input  required type="text"  id="first-name" type="text" name="firstname">
          </label><br>
-         <label>
-            Enter Your Last Name: <input type="text" name="lastname">
+         <label for="last-name">
+            Enter Your Last Name: <input  required type="" id="last-name" type="text" name="lastname">
          </label><br>
-         <label>
-          Enter Your Email: <input type="email" name="email">
+         <label for="email">
+          Enter Your Email: <input  required type="email" id="email" type="email" name="email">
          </label><br>
-         <label>
-            Create a New Password: <input type="password" name="password">
+         <label for="new-password">
+            Create a New Password: <input name="rpassword" minlength="8" required type="password"  id="new-password" type="password" name="password" pattern="[a-z0-5]{8,}">
          </label><br>
            
     </fieldset>
-    <fieldset class="fieldset"></fieldset>
-    <fieldset class="fieldset"></fieldset>
+    <fieldset class="fieldset">
+        <legend>Account type(required)</legend>
+        <label for="personal-account"><input class="inline" id="personal-account" name="account-type"  type="radio" checked="Personal" /> Personal </label>
+        <label for="business-account"><input class="inline" id="business-account" name="account-type"  type="radio" /> Business </label>
+    </fieldset>
+    <fieldset class="fieldset">
+        <label for="terms-and-conditions">
+            <input class="inline" name="terms" id="terms-and-conditions"  type="checkbox" required >
+            I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank" rel="noopener noreferrer">terms and conditions</a>
+        </label>
+        <label  for="profile-picture">Upload a profile picture: <input 
+            name="profilepic" id="profile-picture" type="file" /></label>
+        <label for="age">Input your age (years): <input name="age" id="age" type="number" min="13" max="120"></label>
+        <label for="referrer">How did your hear about us?
+            <select name="" id="referrer">
+                <option value="">(select one)</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp YouTube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+        <label for="">
+            Provide a bio: 
+            <textarea id="bio" name="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>          
+        </label>
+    </fieldset> 
+    <input name="buton" type="submit" value="Submit">
 
 </body>
 </html>
