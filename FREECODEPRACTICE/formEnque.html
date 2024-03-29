@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/formEnque.css">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h1 id="title">FORM TO GET A JOB</h1>
+        <p id="description"><i>Welcome to our job application portal! We're thrilled that you're interested in joining our team. Please take a few moments to complete the following form to provide us with essential information about yourself.</i></p>
+
+        <form action="" id="survey-form">
+            
+              <fieldset>
+                <label for="name" id="name-label">
+                  <p>
+                    Name
+                  </p>
+                  <input class="form-control" type="text" id="name" placeholder="Name" required>
+                </label><br>
+                  
+                <label for="email" id="email-label">
+                  <p>
+                    Email
+                  </p>
+                  <input class="form-control" type="email" id="email" placeholder="Your email" required>
+                </label><br>
+            
+                <label for="number" id="number-label"> 
+                  <p>
+                    Age
+                  </p>
+                  <input  class="form-control" type="number" id="number" min="0" max="99" placeholder="Age" required>
+                </label><br>
+              </fieldset>
+            
+              <fieldset>Which is your schedule avalaible?
+                <select name="" id="dropdown">
+                  <option value="">Monday to Friday</option>
+                  <option value="">Saturday to Sunday</option>
+              </select>
+              </fieldset>
+
+              <fieldset>
+                <legend>Quantity Payment(required)</legend>
+                <label for=""><input type="radio" value="0" name="payment"> 15 Dollars</label>
+                <label for=""><input type="radio" value="1" name="payment"> 17 Dollars</label>
+                <label for=""><input type="radio" value="2" name="payment"> 20 Dollars </label>
+                <label for=""><input type="radio" value="3" name="payment"> 22 Dollars</label>
+              </fieldset>
+
+              <fieldset>
+                <input type="checkbox" value="email">
+                <input type="checkbox" value="telephone">
+              </fieldset>
+              <fieldset>
+                <textarea name="" id="" cols="30" rows="10">Additional comments</textarea>
+              </fieldset>
+              
+        <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
