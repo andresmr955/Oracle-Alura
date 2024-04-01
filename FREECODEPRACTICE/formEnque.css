@@ -10,10 +10,10 @@ body{
 }
 
 form{
-    margin: 0 auto;
+    margin: auto auto;
     max-width: 500px;
     min-width: 300px;
-    padding: 2em;
+    padding: 0 2em;
 
 }
 #title{
@@ -34,9 +34,11 @@ form{
     align-items: center;
     display: block;
     border-radius: 10px;
+    margin: 0px 100px;
+    padding: 0 10px;
 }
 
-label {
+label{
 
     display: block;
     margin: 0.5rem 0;    
@@ -50,6 +52,7 @@ label {
 
 /* Button styles */
 #submit{
+   
     background-color: #0c2b91a6; /* Facebook blue */
     color: #fff; /* White text color */
     border: none; /* No border */
@@ -69,13 +72,28 @@ label {
 }
 
 
-fieldset{
+ .fieldset-additionals{
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
     color: aliceblue;
     font-size: 20px;
 
+}
+
+fieldset{
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+fieldset p{
+    margin: 7px;
+}
+
+legend{
+    padding: 0.9rem 0 0 0;
 }
 
 label p{
@@ -120,6 +138,7 @@ label p{
 }
 
 .input-textarea {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     min-height: 120px;
     width: 100%;
     padding: 0.625rem;

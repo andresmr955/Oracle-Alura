@@ -18,47 +18,53 @@
                     Name
                   </p>
                   <input class="form-control" type="text" id="name" placeholder="Name" required>
-                </label><br>
+                </label>
                   
                 <label for="email" id="email-label">
                   <p>
                     Email
                   </p>
                   <input class="form-control" type="email" id="email" placeholder="Your email" required>
-                </label><br>
-            
+                </label>
                 <label for="number" id="number-label"> 
                   <p>
                     Age
                   </p>
                   <input  class="form-control" type="number" id="number" min="0" max="99" placeholder="Age" required>
-                </label><br>
+                </label>
               </fieldset>
             
-              <fieldset>Which is your schedule avalaible?
+              <fieldset class="fieldset-additionals">Which is your schedule avalaible?
                 <select name="" id="dropdown">
                   <option value="">Monday to Friday</option>
                   <option value="">Saturday to Sunday</option>
               </select>
               </fieldset>
 
-              <fieldset>
-                <legend>Quantity Payment(required)</legend>
+              <fieldset class="fieldset-additionals">
+                <legend  >Quantity Payment(required)</legend>
                 <label for=""><input type="radio" value="0" name="payment"> 15 Dollars</label>
                 <label for=""><input type="radio" value="1" name="payment"> 17 Dollars</label>
                 <label for=""><input type="radio" value="2" name="payment"> 20 Dollars </label>
                 <label for=""><input type="radio" value="3" name="payment"> 22 Dollars</label>
               </fieldset>
 
-              <fieldset>
-                <input type="checkbox" value="email">
-                <input type="checkbox" value="telephone">
+              <fieldset class="fieldset-additionals">
+                <legend  >Which position, would you like to apply?</legend>
+                <input type="checkbox" value="email"> Gerent
+                <input type="checkbox" value="telephone"> Caissier 
+                <input type="checkbox" value="email"> Cuisinier
+                <input type="checkbox" value="telephone"> All
               </fieldset>
-              <fieldset>
-                <textarea name="" id="" cols="30" rows="10">Additional comments</textarea>
+              <fieldset class="fieldset-additionals">
+                
+                <legend>Any comments or suggestions?</legend>
+                <textarea name="" id="" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
               </fieldset>
               
-        <input type="submit" id="submit">
+        <fieldset class="fieldset-additionals">
+          <input type="submit" id="submit">
+        </fieldset>
         </form>
     </body>
 </html>
